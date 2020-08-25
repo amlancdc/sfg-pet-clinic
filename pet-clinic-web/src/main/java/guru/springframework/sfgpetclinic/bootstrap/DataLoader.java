@@ -47,11 +47,11 @@ public class DataLoader implements CommandLineRunner {
         Specialty savedRadiology = specialityService.save(radiology);
 
         Specialty surgery = new Specialty();
-        radiology.setDescription("Surgery");
+        surgery.setDescription("Surgery");
         Specialty savedSurgery = specialityService.save(surgery);
 
         Specialty dentistry = new Specialty();
-        radiology.setDescription("Dentistry");
+        dentistry.setDescription("Dentistry");
         Specialty savedDentistry = specialityService.save(dentistry);
 
         Owner owner1 = new Owner();
